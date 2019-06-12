@@ -1,0 +1,8 @@
+exp_my/hmdb51_gen_flow_tmp/
+*/data_loader/build/
+*/data
+*/exp
+*/__pycache__/
+*.tar
+*.fuse
+.nfs*

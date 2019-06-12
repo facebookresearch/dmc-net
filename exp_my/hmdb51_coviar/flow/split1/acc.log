@@ -1,0 +1,10 @@
+Accuracy: 0.620261 (1530).
+Accuracy: 0.538562 (1530).
+Traceback (most recent call last):
+  File "combine.py", line 53, in <module>
+    main()
+  File "combine.py", line 45, in main
+    flow = np.load(args.flow)
+  File "/home/zhengshou/anaconda2/envs/py36pt31cuda90/lib/python3.6/site-packages/numpy/lib/npyio.py", line 370, in load
+    fid = open(file, "rb")
+FileNotFoundError: [Errno 2] No such file or directory: 'exp/hmdb51_coviar/flow_wo_databn/split1/flow_score_model_best.npz'
