@@ -1,3 +1,9 @@
+"""
+Copyright (c) Facebook, Inc. and its affiliates.
+This source code is licensed under the MIT license found in the
+LICENSE file in the root directory of this source tree.
+"""
+
 # most of the code are from:
 # https://github.com/bryanyzhu/two-stream-pytorch/blob/master/video_transforms.py
 import cv2

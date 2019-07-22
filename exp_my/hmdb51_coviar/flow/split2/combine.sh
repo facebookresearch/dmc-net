@@ -1,3 +1,7 @@
+# Copyright (c) Facebook, Inc. and its affiliates.
+# This source code is licensed under the MIT license found in the
+# LICENSE file in the root directory of this source tree.
+
 # ./exp/hmdb51_coviar/flow/split2/combine.sh 2>&1 | tee ./exp/hmdb51_coviar/flow/split2/acc.log
 
 expdir=hmdb51_coviar

@@ -1,6 +1,13 @@
 """
-Author: Yunpeng Chen
+Copyright (c) Facebook, Inc. and its affiliates.
+This source code is licensed under the MIT license found in the
+LICENSE file in the root directory of this source tree.
 """
+
+"""
+Orginially borrow from MF-Net github whose Author is: Yunpeng Chen
+"""
+
 import logging
 import os
 from collections import OrderedDict

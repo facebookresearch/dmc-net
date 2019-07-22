@@ -1,3 +1,7 @@
+# Copyright (c) Facebook, Inc. and its affiliates.
+# This source code is licensed under the MIT license found in the
+# LICENSE file in the root directory of this source tree.
+
 #! /bin/bash
 
 # ./exp/ucf101_gan/split2/run_combine.sh 2>&1 | tee ./exp/ucf101_gan/split2/acc.log
