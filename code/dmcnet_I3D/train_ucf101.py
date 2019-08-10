@@ -24,7 +24,7 @@ parser = argparse.ArgumentParser(description="DMC-Net Parser")
 parser.add_argument('--debug-mode', type=bool, default=True,
                     help="print all setting for debugging.")
 # io
-parser.add_argument('--dataset', default='UCF101', choices=['UCF101', 'HMDB51', 'Kinetics'],
+parser.add_argument('--dataset', default='UCF101', choices=['UCF101', 'HMDB51'],
                     help="path to dataset")
 parser.add_argument('--split', type = int, default=1, 
                     help="which split to train on")
@@ -54,12 +54,12 @@ parser.add_argument('--ds_factor', type=int, default=16,
 parser.add_argument('--gpus', type=str, default="0,1,2,3,4,5,6,7",
                     help="define gpu id")
 # algorithm
-parser.add_argument('--network', type=str, default='MFNet_3D',
-                    choices=['MFNet_3D', 'I3D'],
+parser.add_argument('--network', type=str, default='I3D',
+                    choices=['I3D'],
                     help="chose the base network")
 parser.add_argument('--arch-estimator', type=str, default=None,
                     choices=['DenseNet','DenseNetSmall', 'DenseNetTiny'],
-                    help="ch0ose the generator")
+                    help="choose the generator")
 parser.add_argument('--arch-d', type=str, default=None,
                     help="choose the D")
 # initialization with priority (the next step will overwrite the previous step)

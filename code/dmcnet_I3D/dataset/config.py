@@ -14,8 +14,6 @@ def get_config(name):
         config['num_classes'] = 101
     elif name.upper() == 'HMDB51':
         config['num_classes'] = 51
-    elif name.upper() == 'KINETICS':
-        config['num_classes'] = 400
     else:
         logging.error("Configs for dataset '{}'' not found".format(name))
         raise NotImplemented
@@ -30,4 +28,3 @@ if __name__ == "__main__":
 
     logging.info(get_config("ucf101"))
     logging.info(get_config("HMDB51"))
-    logging.info(get_config("Kinetics"))

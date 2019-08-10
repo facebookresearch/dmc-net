@@ -62,7 +62,7 @@ Then we use the above trained model as initialization to train with the adversar
 
 ### Our trained models
 
-At [here](), we provide our trained models and prediction results. The file directory of `./models/` follows similar structure as `./exp_my/`. Please put the trained model and prediction result (for each dataset and split from `./models/`) in the corresponding folder (for experiment in `./exp_my/`). 
+At AWS host [here](dl.fbaipublicfiles.com/dmc-net/models.zip), we provide our trained models and prediction results. The file directory of `./models/` follows similar structure as `./exp_my/`. Please put the trained model and prediction result (for each dataset and split from `./models/`) in the corresponding folder (for experiment in `./exp_my/`). 
 
 ### Results
 

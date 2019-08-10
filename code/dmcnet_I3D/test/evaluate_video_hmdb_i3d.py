@@ -31,7 +31,7 @@ parser = argparse.ArgumentParser(description="PyTorch Video Recognition Parser (
 parser.add_argument('--debug-mode', type=bool, default=False,
                     help="print all setting for debugging.")
 # io
-parser.add_argument('--dataset', default='HMDB51', choices=['UCF101','Kinetics', 'HMDB51'],
+parser.add_argument('--dataset', default='HMDB51', choices=['UCF101','HMDB51'],
                     help="path to dataset")
 parser.add_argument('--clip-length', type = int, default=250,
                     help="define the length of each input sample.")   
@@ -58,7 +58,7 @@ parser.add_argument('--gpus', type=str, default='0',
                     help="define gpu id")
 # algorithm
 parser.add_argument('--network', type=str, default='i3d',
-                    choices=['mfnet_3d', 'i3d'],
+                    choices=['i3d'],
                     help="chose the base network")
 parser.add_argument('--arch-estimator', type=str, default = None,
                     choices=['DenseNet','DenseNetSmall', 'DenseNetTiny'],

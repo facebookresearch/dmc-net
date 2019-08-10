@@ -111,8 +111,8 @@ def train_model(net_name,  sym_net, model_prefix, dataset, input_conf,
                      out if len(out) < 300 else out[0:150] + " ... " + out[-150:], lr_mul))
     if net_name == 'I3D':
         weight_decay = 0.0001
-    elif net_name == 'MFNet_3D':
-        weight_decay = 0.0001
+    else:
+        raise ValueError('UNKOWN net_name', net_name)
     logging.info("Train_Model:: weight_decay: `{}'".format(weight_decay))
     if distributed:
         net.net = torch.nn.parallel.DistributedDataParallel(net.net).cuda()

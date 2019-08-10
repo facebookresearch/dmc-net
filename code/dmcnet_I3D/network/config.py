@@ -13,16 +13,7 @@ def get_config(name, modality = 'rgb', **kwargs):
 
     config = {}
 
-
-    if name.upper() == "MFNET_3D":
-        if modality == 'rgb':
-            logging.info("Preprocessing:: using MXNet default mean & std.")
-            config['mean'] = [124 / 255, 117 / 255, 104 / 255]
-            config['std'] = [1 / (.0167 * 255)] * 3
-        elif modality == 'flow':
-            config['mean'] = [0.5] * 2
-            config['std'] = [1 / (.0167 * 255)] * 2
-    elif name.upper() == "I3D":
+    if name.upper() == "I3D":
         config['mean'] = [0.5] * 3
         config['std'] = [0.5] * 3
     else:
